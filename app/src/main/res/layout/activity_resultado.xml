@@ -1,16 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Resultado">
+    android:orientation="vertical"
+    android:gravity="center">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewTam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/resultado"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="150dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="A sua empresa aérea favorita é a Tam!"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewGol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="A sua empresa aérea favorita é a Gol!"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="A sua empresa aérea favorita é a Azul!"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewPassaredo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="A sua empresa aérea favorita é a Passaredo!"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewtam"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/img"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewgol"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_1"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewazul"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_2"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewpassa"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_3"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/botaoResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agendar um voo agora!"
+        android:visibility="gone" />
+
+
+
+</LinearLayout>

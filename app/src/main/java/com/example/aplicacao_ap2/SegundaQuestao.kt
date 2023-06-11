@@ -62,6 +62,12 @@ class SegundaQuestao : AppCompatActivity() {
             Toast.makeText(this@SegundaQuestao, message, Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this@SegundaQuestao, TerceiraQuestao ::class.java)
+
+            intent.putExtra("BarraTam2", valortam)
+            intent.putExtra("BarraGol2", valorgol)
+            intent.putExtra("BarraAzul2", valorazul)
+            intent.putExtra("BarraPassa2", valorpassa)
+
             startActivity(intent)
         }
     }
