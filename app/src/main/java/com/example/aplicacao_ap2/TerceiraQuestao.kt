@@ -16,9 +16,13 @@ class TerceiraQuestao : AppCompatActivity() {
     private lateinit var BarraAzul: RatingBar
     private lateinit var BarraPassa: RatingBar
 
+    private var nome: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_terceira_questao)
+
+        nome = intent.getStringExtra("nome")
 
         val notaTam3 = intent.getFloatExtra("BarraTam2", 0.0f)
         val notaGol3 = intent.getFloatExtra("BarraGol2", 0.0f)
@@ -68,6 +72,8 @@ class TerceiraQuestao : AppCompatActivity() {
             intent.putExtra("valortotalgol", valortotalgol)
             intent.putExtra("valortotalazul", valortotalazul)
             intent.putExtra("valortotalpassa", valortotalpassa)
+
+            intent.putExtra("nome", nome)
 
             startActivity(intent)
         }

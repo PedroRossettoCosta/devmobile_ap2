@@ -24,11 +24,15 @@ class Resultado : AppCompatActivity() {
 
     private lateinit var botaoResultado: Button
 
+    private var nome : String? = null
+
     data class Resultado(val valor: Float, val acao: () -> Unit)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado)
+
+        nome = intent.getStringExtra("nome")
 
         textViewTam = findViewById(R.id.textViewTam)
         textViewGol = findViewById(R.id.textViewGol)
@@ -42,6 +46,8 @@ class Resultado : AppCompatActivity() {
 
         botaoResultado = findViewById(R.id.botaoResultado)
 
+
+
         val valorfinaltam = intent.getFloatExtra("valortotaltam", 0.0f)
         val valorfinalgol = intent.getFloatExtra("valortotalgol", 0.0f)
         val valorfinalazul = intent.getFloatExtra("valortotalazul", 0.0f)
@@ -52,7 +58,7 @@ class Resultado : AppCompatActivity() {
         val resultados = listOf(
             Resultado(valorfinaltam) {
                 textViewTam.visibility = View.VISIBLE
-                textViewTam.text = "A sua empresa favorita é a Tam!"
+                textViewTam.text = "A empresa favorita de $nome é a Tam!"
                 imageViewtam.visibility = View.VISIBLE
                 botaoResultado.visibility = View.VISIBLE
 
@@ -64,7 +70,7 @@ class Resultado : AppCompatActivity() {
             },
             Resultado(valorfinalgol) {
                 textViewGol.visibility = View.VISIBLE
-                textViewGol.text = "A sua empresa favorita é a Gol!"
+                textViewGol.text = "A empresa favorita de $nome é a Gol!"
                 imageViewgol.visibility = View.VISIBLE
                 botaoResultado.visibility = View.VISIBLE
 
@@ -76,7 +82,7 @@ class Resultado : AppCompatActivity() {
             },
             Resultado(valorfinalazul) {
                 textViewAzul.visibility = View.VISIBLE
-                textViewAzul.text = "A sua empresa favorita é a Azul!"
+                textViewAzul.text = "A empresa favorita de $nome é a Azul!"
                 imageViewazul.visibility = View.VISIBLE
                 botaoResultado.visibility = View.VISIBLE
 
@@ -88,7 +94,7 @@ class Resultado : AppCompatActivity() {
             },
             Resultado(valorfinalpassa) {
                 textViewPassa.visibility = View.VISIBLE
-                textViewPassa.text = "A sua empresa favorita é a Passaredo!"
+                textViewPassa.text = "A empresa favorita de $nome é a Passaredo!"
                 imageViewpassa.visibility = View.VISIBLE
                 botaoResultado.visibility = View.VISIBLE
 

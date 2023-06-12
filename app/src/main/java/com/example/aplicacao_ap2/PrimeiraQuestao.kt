@@ -16,6 +16,8 @@ class PrimeiraQuestao : AppCompatActivity() {
     private lateinit var BarraAzul: RatingBar
     private lateinit var BarraPassa: RatingBar
 
+    private var nome: String? = null
+
     private var notaTam: Float = 0.0f
     private var notaGol: Float = 0.0f
     private var notaAzul: Float = 0.0f
@@ -24,6 +26,8 @@ class PrimeiraQuestao : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_primeira_questao)
+
+        nome = intent.getStringExtra("nome")
 
         BarraTam = findViewById(R.id.Barratam)
         BarraGol = findViewById(R.id.Barragol)
@@ -60,6 +64,8 @@ class PrimeiraQuestao : AppCompatActivity() {
             intent.putExtra("BarraGol", notaGol)
             intent.putExtra("BarraAzul", notaAzul)
             intent.putExtra("BarraPassa", notaPassa)
+
+            intent.putExtra("nome", nome)
 
             startActivity(intent)
         }

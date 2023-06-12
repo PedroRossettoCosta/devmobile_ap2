@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:textColor="@android:color/black"
-        android:text="A sua empresa aérea favorita é a Tam!"
+        android:text="A empresa aérea favorita de $nome é a Tam!"
         android:visibility="gone" />
 
     <TextView
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:textColor="@android:color/black"
-        android:text="A sua empresa aérea favorita é a Gol!"
+        android:text="A empresa aérea favorita de $nome é a Gol!"
         android:visibility="gone" />
 
     <TextView
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:textColor="@android:color/black"
-        android:text="A sua empresa aérea favorita é a Azul!"
+        android:text="A empresa aérea favorita de $nome é a Azul!"
         android:visibility="gone" />
 
     <TextView
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:textColor="@android:color/black"
-        android:text="A sua empresa aérea favorita é a Passaredo!"
+        android:text="A empresa aérea favorita de $nome é a Passaredo!"
         android:visibility="gone" />
 
     <ImageView
