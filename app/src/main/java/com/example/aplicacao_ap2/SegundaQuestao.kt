@@ -80,7 +80,7 @@ class SegundaQuestao : AppCompatActivity() {
 
     fun resetQuiz() {
         nome = null
-        // Reset rating bar values to initial state
+
         Barratam.rating = 0.0f
         Barragol.rating = 0.0f
         Barraazul.rating = 0.0f

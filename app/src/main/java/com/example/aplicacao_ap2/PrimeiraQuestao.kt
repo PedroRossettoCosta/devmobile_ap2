@@ -75,6 +75,7 @@ class PrimeiraQuestao : AppCompatActivity() {
 
     fun resetQuiz() {
         nome = null
+
         notaTam = 0.0f
         notaGol = 0.0f
         notaAzul = 0.0f
