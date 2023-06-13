@@ -9,6 +9,8 @@ import android.widget.RatingBar
 import android.widget.Toast
 import com.example.aplicacao_ap2.PrimeiraQuestao
 
+
+
 class PrimeiraQuestao : AppCompatActivity() {
 
     private lateinit var BarraTam: RatingBar
@@ -70,4 +72,14 @@ class PrimeiraQuestao : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun resetQuiz() {
+        nome = null
+        notaTam = 0.0f
+        notaGol = 0.0f
+        notaAzul = 0.0f
+        notaPassa = 0.0f
+    }
+
+
 }

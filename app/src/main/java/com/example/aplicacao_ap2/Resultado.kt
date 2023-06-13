@@ -113,5 +113,6 @@ class Resultado : AppCompatActivity() {
         maxResultado?.acao?.invoke()
 
         }
+
     }
 

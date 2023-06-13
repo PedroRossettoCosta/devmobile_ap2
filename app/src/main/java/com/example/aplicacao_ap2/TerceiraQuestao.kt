@@ -78,4 +78,15 @@ class TerceiraQuestao : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun resetQuiz() {
+        nome = null
+        // Reset rating bar values to initial state
+        BarraTam.rating = 0.0f
+        BarraGol.rating = 0.0f
+        BarraAzul.rating = 0.0f
+        BarraPassa.rating = 0.0f
+    }
+
+
 }

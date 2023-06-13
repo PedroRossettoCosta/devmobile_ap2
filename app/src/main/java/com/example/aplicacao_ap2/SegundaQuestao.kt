@@ -77,4 +77,15 @@ class SegundaQuestao : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun resetQuiz() {
+        nome = null
+        // Reset rating bar values to initial state
+        Barratam.rating = 0.0f
+        Barragol.rating = 0.0f
+        Barraazul.rating = 0.0f
+        Barrapassa.rating = 0.0f
     }
+
+
+}
